@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThinkVibe - the agent who animates your ideas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">ThinkVibe</div>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="login">Log in</button>
+      <button class="get-started">Get started</button>
+    </div>
+  </nav>
+  <main class="hero">
+    <canvas id="bg-canvas"></canvas>
+    <div class="particles"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Idea to design in seconds.</h1>
+      <p class="hero-tagline">Your AI agent who animates your ideas.</p>
+      <button class="cta-btn main-cta">Start Designing</button>
+    </div>
+  </main>
+  <!-- User Design Input Section -->
+  <section id="design-input-section">
+    <h2>Describe what you want to design</h2>
+    <form id="design-form">
+      <input type="text" id="design-input" name="design" placeholder="e.g. A landing page for a travel app with animated backgrounds" required />
+      <button type="submit" class="cta-btn">Submit</button>
+    </form>
+  </section>
+  <section class="features-section" id="features">
+    <div class="features-container">
+      <div class="feature-card">
+        <div class="feature-icon" id="feature-icon-1"></div>
+        <h3>Component Assembly</h3>
+        <p>Assemble and animate UI components with ease.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" id="feature-icon-2"></div>
+        <h3>Edit by Typing</h3>
+        <p>Edit your animations just by typing your ideas.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" id="feature-icon-3"></div>
+        <h3>Loved by Designers</h3>
+        <p>Trusted by design innovators and teams worldwide.</p>
+      </div>
+    </div>
+  </section>
+  <section class="testimonials-section" id="testimonials">
+    <h2>What Designers Say</h2>
+    <div class="testimonials-container">
+      <div class="testimonial">
+        <p>“This AI tool revolutionized my design workflow. The animations it creates are not just beautiful, but they tell a story.”</p>
+        <span class="author">Sarah Chen, Creative Director</span>
+      </div>
+      <div class="testimonial">
+        <p>“The way it understands design principles and translates them into fluid animations is mind-blowing.”</p>
+        <span class="author">Marcus Rodriguez, UI/UX Lead</span>
+      </div>
+      <div class="testimonial">
+        <p>“Finally, an AI that speaks the language of design! The animations it creates maintain the emotional impact I want.”</p>
+        <span class="author">Emma Watson, Design Consultant</span>
+      </div>
+      <div class="testimonial">
+        <p>“The level of control and customization is impressive. It understands subtle design nuances and translates them into precise animations.”</p>
+        <span class="author">Thomas Wright, Lead Designer</span>
+      </div>
+    </div>
+  </section>
+  <footer class="footer-cta">
+    <div class="footer-links">
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Documentation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#testimonials">Community</a></li>
+          <li><a href="#">Help Center</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 ThinkVibe. All rights reserved.</span>
+    </div>
+  </footer>
+  <script type="module" src="main.js"></script>
+</body>
+</html> 

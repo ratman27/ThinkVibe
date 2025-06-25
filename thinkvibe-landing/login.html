@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - ThinkVibe</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f8f7fc;
+    }
+    .login-container {
+      display: flex;
+      height: 100vh;
+    }
+    .login-illustration {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+    }
+    .login-illustration svg {
+      width: 340px;
+      height: 340px;
+      max-width: 90%;
+    }
+    .login-form-section {
+      flex: 1;
+      background: #1677ef;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top-left-radius: 2rem;
+      border-bottom-left-radius: 2rem;
+      min-width: 340px;
+      position: relative;
+    }
+    .login-form-box {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 16px rgba(22,119,239,0.08);
+      padding: 2.5rem 2.2rem 2rem 2.2rem;
+      max-width: 370px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .login-form-box h1 {
+      margin: 0 0 0.7rem 0;
+      font-size: 2rem;
+      font-weight: 800;
+      color: #222;
+    }
+    .login-form-box p {
+      margin: 0 0 1.5rem 0;
+      color: #444;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+    .login-form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+    }
+    .login-input {
+      width: 100%;
+      padding: 0.9rem 1.2rem 0.9rem 2.5rem;
+      border-radius: 2rem;
+      border: 1.5px solid #e0e0e0;
+      background: #f8f7fc;
+      font-size: 1.08rem;
+      color: #222;
+      outline: none;
+      transition: border 0.2s, box-shadow 0.2s;
+      background-repeat: no-repeat;
+      background-position: 1rem center;
+    }
+    .login-input.email {
+      background-image: url('data:image/svg+xml;utf8,<svg fill="none" stroke="%23999" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>');
+    }
+    .login-input.password {
+      background-image: url('data:image/svg+xml;utf8,<svg fill="none" stroke="%23999" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="11" width="14" height="8" rx="2"/><path d="M12 15v2"/><path d="M8 11v-2a4 4 0 0 1 8 0v2"/></svg>');
+    }
+    .login-btn {
+      width: 100%;
+      padding: 0.9rem 0;
+      border-radius: 2rem;
+      border: none;
+      background: #1677ef;
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      transition: background 0.2s;
+    }
+    .login-btn:hover {
+      background: #125fc1;
+    }
+    .forgot-link {
+      margin-top: 1.1rem;
+      color: #1677ef;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      align-self: flex-start;
+      transition: color 0.18s;
+    }
+    .forgot-link:hover {
+      color: #125fc1;
+      text-decoration: underline;
+    }
+    @media (max-width: 900px) {
+      .login-container { flex-direction: column; }
+      .login-illustration, .login-form-section { flex: none; width: 100%; min-width: 0; border-radius: 0; }
+      .login-form-section { border-radius: 0; }
+      .login-illustration { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-illustration">
+      <!-- Placeholder SVG illustration -->
+      <svg viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="40" y="80" width="260" height="180" rx="24" fill="#e0f0ff"/>
+        <rect x="80" y="120" width="180" height="40" rx="8" fill="#b3d8fd"/>
+        <rect x="80" y="170" width="180" height="20" rx="6" fill="#d1eaff"/>
+        <circle cx="110" cy="220" r="18" fill="#1677ef"/>
+        <rect x="140" y="210" width="80" height="18" rx="6" fill="#b3d8fd"/>
+        <rect x="80" y="250" width="180" height="10" rx="5" fill="#d1eaff"/>
+      </svg>
+    </div>
+    <div class="login-form-section">
+      <form class="login-form-box" autocomplete="off">
+        <h1>Hello!</h1>
+        <p>Sign Up to Get Started</p>
+        <div class="login-form">
+          <input type="email" class="login-input email" placeholder="Email Address" required />
+          <input type="password" class="login-input password" placeholder="Password" required />
+          <button type="submit" class="login-btn">Login</button>
+        </div>
+        <a href="#" class="forgot-link">Forgot Password</a>
+      </form>
+    </div>
+  </div>
+</body>
+</html> 
